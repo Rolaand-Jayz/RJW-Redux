@@ -18,7 +18,7 @@ This is an evidence ledger, not a claim that RJW, CCE, Promptitect, Evaluator, T
 | **2025-11-26 00:01:36** | [Restructure to pure methodology](https://github.com/Rolaand-Jayz/Rolaand-Jayz-Wayz-IDD/commit/e585c6b02296bf0aef4ba713d2dd6e68a6d23858). | Code, starter kit, scripts, and workflows were removed from the then-current repository tree. Looking only at its later state would miss that earlier implementation work. The deleted code remains visible in Git history. |
 | **2025-12-01 12:50:17** | [Historical source revision `608e271`](https://github.com/Rolaand-Jayz/Rolaand-Jayz-Wayz-IDD/commit/608e27182aa88184db54deb335487f4c2150f059). | The selected `METHOD-0001` and `METHOD-0004` documents in this public repo were copied from this **later** revision. They are snapshots of the method at that time, not proof their full contents existed in September. |
 
-The original repository is private; its commit links may require access. Selected historical text is publicly mirrored under [`history/rjw-idd/`](rjw-idd/README.md).
+The original repository is private; its commit links may require access. Selected historical text is publicly mirrored under [`history/rjw-idd/`](rjw-idd/).
 
 ## Conversation leads requiring archival confirmation
 
