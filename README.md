@@ -42,6 +42,8 @@ A few principles show up everywhere in the method:
 - [Evaluator](components/EVALUATOR.md)
 - [Tribunal](components/TRIBUNAL.md)
 - [RJW lineage and historical snapshots](history/README.md)
+- [Dated history and evidence ledger](history/TIMELINE.md)
+- [Chat-export evidence intake plan](history/CHAT_EVIDENCE_INTAKE.md)
 
 Rebrain is intentionally being developed on a separate `rebrain` branch while its claims and boundaries are still being tested.
 
