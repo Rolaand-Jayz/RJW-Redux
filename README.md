@@ -60,3 +60,12 @@ The original repository was created on **September 29, 2025**. Selected source d
 Active methodology work.
 
 Some components are mature enough to document as current practice. Others, especially Rebrain, remain experimental and are labeled accordingly.
+
+## Review paths
+
+- [Architecture](docs/ARCHITECTURE.md)
+- [How to review this repository](docs/REVIEW_GUIDE.md)
+- [Audited Promptitect engineering specification](design/PROMPTITECT_ENGINEERING_SPEC_2026-09-26.md)
+- [Promptitect + CCE design handoff](design/PROMPTITECT_CCE_DESIGN_HANDOFF.md)
+- [Evaluator pack specification](design/EVALUATOR_PACK_SPEC.md)
+- [Tribunal director skill](design/TRIBUNAL_DIRECTOR_SKILL.md)
