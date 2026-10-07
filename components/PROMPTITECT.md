@@ -50,3 +50,7 @@ Early Promptitect tried to improve the prompt.
 Current Promptitect tries to improve the entire path from human objective to verified outcome.
 
 The prompt is now one compiled artifact inside a larger decision system, not the product itself.
+
+## Deeper design
+
+See [Promptitect Engineering Specification](../design/PROMPTITECT_ENGINEERING_SPEC_2026-09-26.md) for the audited architecture, contracts, quality governor, routing model, and verification design.
