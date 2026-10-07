@@ -4,6 +4,11 @@ RJW Redux descends from **Rolaand Jayz Wayz - Intelligence Driven Development (R
 
 The original repository is private, so selected historical documents are reproduced here to make the lineage independently inspectable.
 
+## Follow the evidence
+
+- [Dated timeline and proof limits](TIMELINE.md)
+- [Chat history evidence intake (export pending)](CHAT_EVIDENCE_INTAKE.md)
+
 ## Historical source
 
 Repository:
