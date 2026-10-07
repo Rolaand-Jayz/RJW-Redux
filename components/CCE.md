@@ -55,3 +55,7 @@ Promptitect decides what work should happen.
 CCE decides what the participant performing that work needs to know.
 
 That boundary is intentional.
+
+## Deeper design
+
+See [Promptitect + CCE Design Handoff](../design/PROMPTITECT_CCE_DESIGN_HANDOFF.md) for the longer-form context-runtime design that led into the current architecture.
