@@ -37,3 +37,7 @@ The important property is that the result is not accepted merely because the cre
 The Evaluator is intentionally hard to please.
 
 "Harsh" describes the standard, not the way it speaks to people.
+
+## Deeper design
+
+See [Evaluator Pack Specification](../design/EVALUATOR_PACK_SPEC.md) for the repository and pull-request evaluator implementation contract.
