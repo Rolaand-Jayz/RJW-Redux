@@ -49,3 +49,7 @@ Tribunal primarily challenges decisions before or during commitment.
 Evaluator primarily judges completed results.
 
 They overlap in skepticism but solve different problems.
+
+## Deeper design
+
+See [Tribunal Director Skill](../design/TRIBUNAL_DIRECTOR_SKILL.md) for the executable review constitution, role separation, coverage mapping, cross-examination, adjudication, and saturation loop.
