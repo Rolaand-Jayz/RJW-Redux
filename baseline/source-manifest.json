@@ -1,0 +1,249 @@
+{
+  "schema_version": 1,
+  "source_policy": "Source files are user-owned Library artifacts, NOT committed to this public repository. Reproduce identity checks by passing a private source directory to verify.py.",
+  "authority": "User-confirmed exact Custom GPT source copies in Library. Later planning documents do not supersede these runtime sources.",
+  "collected": "2026-10-11",
+  "archives": [
+    {
+      "role": "promptitect_gpt",
+      "name": "promptitect.zip",
+      "sha256": "be5c2f942f7c764768cdf7ff93dbbd03fa8057f1c2682c74fb6e81a4ecebe3c7",
+      "entries": 11
+    },
+    {
+      "role": "promptitect_plugin",
+      "name": "promptitect-plugin-v0.2.0(1).zip",
+      "sha256": "8a3899db8010eff0a1a779557a28f8ecb37488dff1f60cb216c3cb69f214f048",
+      "entries": 53
+    },
+    {
+      "role": "promptitect_portable_skill",
+      "name": "promptitect-prompting-skill-v1.0.0.zip",
+      "sha256": "9fd9559743ea22ac21b683558b9ca1dc87def7829e358172316351ea9710e094",
+      "entries": 33
+    }
+  ],
+  "evaluator": [
+    {
+      "name": "THE-EVALUATOR-v2-System-Prompt.md",
+      "sha256": "58bc662e71737c1820c9f087be94f0e633d35afd9f286508006050c7ebbdc19f"
+    },
+    {
+      "name": "SUP-01-Runtime-Contract-and-Module-Selection.md",
+      "sha256": "183085a8ca6af9f569332e16578a680699d0230e919471dbdaca74bbc035fe0e"
+    },
+    {
+      "name": "SUP-02-Iterative-State-and-Handoff.md",
+      "sha256": "fed3601676d6a176f9dd70ac676154e7d6ae86a8503c20b5424afcca39412cc6"
+    },
+    {
+      "name": "SUP-03-Output-Schemas-for-AI-Ingestion.md",
+      "sha256": "0b8946949880084a9b3e93f804bc0067e635a47b2836f71a908d5d366e5c0cab"
+    },
+    {
+      "name": "SUP-04-Evidence-Truthfulness-and-Scoring.md",
+      "sha256": "30166b2a660431b014df269f7a53ec9a8af0fc9bbeb09ce53b5cc38c409e3125"
+    },
+    {
+      "name": "SUP-05-Universal-Quality-Rubric.md",
+      "sha256": "3d108219a35b6edeb1eb55e88ab1774afb2fa5bb553847d8e400ecdb2f0ae70d"
+    },
+    {
+      "name": "SUP-06-Text-Academic-Math-Reasoning.md",
+      "sha256": "f7b1901ac4ad4ca14c1d84f561aea036b28373015ef1d6dc821439256c93a881"
+    },
+    {
+      "name": "SUP-07-Technical-Code-Data-ML.md",
+      "sha256": "5566c839d9fe54bdaf7313ca2f93fbce7a8a587dc5a10637d1043ef95af79cba"
+    },
+    {
+      "name": "SUP-08-Multimedia-UX-Game-Product.md",
+      "sha256": "0096a51e789df79144c0a8814471a4ea50567881de5a575ed8ea309d07df1317"
+    },
+    {
+      "name": "SUP-09-Revision-Instruction-Compiler.md",
+      "sha256": "1bb74c33b48ed30f8df06d2a786bb92a7d4506ac5c27d5fa0d3df31c5c3d745b"
+    },
+    {
+      "name": "SUP-10-Final-Validation-and-Operational-Policies.md",
+      "sha256": "9e18c59b9bb2ec6514637fdd5f35c8015f215313418a10d0f0a07a18ffbdf085"
+    }
+  ],
+  "canonical_categories": [
+    {
+      "category": "system-developer",
+      "module_path": "skills/promptitect/references/modules/system-developer.md",
+      "required_sections": [
+        "Function",
+        "Objective",
+        "Output"
+      ]
+    },
+    {
+      "category": "single-use-task",
+      "module_path": "skills/promptitect/references/modules/single-use-task.md",
+      "required_sections": [
+        "Objective",
+        "Output"
+      ]
+    },
+    {
+      "category": "revision-transformation",
+      "module_path": "skills/promptitect/references/modules/revision-transformation.md",
+      "required_sections": [
+        "Source",
+        "Change"
+      ]
+    },
+    {
+      "category": "research",
+      "module_path": "skills/promptitect/references/modules/research.md",
+      "required_sections": [
+        "Objective/decision",
+        "Questions",
+        "Deliverable"
+      ]
+    },
+    {
+      "category": "analysis-decision",
+      "module_path": "skills/promptitect/references/modules/analysis-decision.md",
+      "required_sections": [
+        "Decision",
+        "Criteria",
+        "Recommendation"
+      ]
+    },
+    {
+      "category": "creative",
+      "module_path": "skills/promptitect/references/modules/creative.md",
+      "required_sections": [
+        "Deliverable"
+      ]
+    },
+    {
+      "category": "educational",
+      "module_path": "skills/promptitect/references/modules/educational.md",
+      "required_sections": [
+        "Learner",
+        "Objective"
+      ]
+    },
+    {
+      "category": "coding-repository",
+      "module_path": "skills/promptitect/references/modules/coding-repository.md",
+      "required_sections": [
+        "Task",
+        "Desired",
+        "Output"
+      ]
+    },
+    {
+      "category": "debugging",
+      "module_path": "skills/promptitect/references/modules/debugging.md",
+      "required_sections": [
+        "Failure",
+        "Expected",
+        "Deliverable"
+      ]
+    },
+    {
+      "category": "api-text",
+      "module_path": "skills/promptitect/references/modules/api-text.md",
+      "required_sections": [
+        "Purpose"
+      ]
+    },
+    {
+      "category": "prd-spec",
+      "module_path": "skills/promptitect/references/modules/prd-spec.md",
+      "required_sections": [
+        "Problem",
+        "Requirements",
+        "Deliverables"
+      ]
+    },
+    {
+      "category": "extraction-classification",
+      "module_path": "skills/promptitect/references/modules/extraction-classification.md",
+      "required_sections": [
+        "Input",
+        "Schema"
+      ]
+    },
+    {
+      "category": "data-analysis",
+      "module_path": "skills/promptitect/references/modules/data-analysis.md",
+      "required_sections": [
+        "Question",
+        "Dataset/schema",
+        "Deliverable"
+      ]
+    },
+    {
+      "category": "spreadsheet",
+      "module_path": "skills/promptitect/references/modules/spreadsheet.md",
+      "required_sections": [
+        "Purpose"
+      ]
+    },
+    {
+      "category": "image-generation",
+      "module_path": "skills/promptitect/references/modules/image-generation.md",
+      "required_sections": [
+        "Purpose",
+        "Subject/action"
+      ]
+    },
+    {
+      "category": "image-editing",
+      "module_path": "skills/promptitect/references/modules/image-editing.md",
+      "required_sections": [
+        "Source",
+        "Change"
+      ]
+    },
+    {
+      "category": "document",
+      "module_path": "skills/promptitect/references/modules/document.md",
+      "required_sections": [
+        "Type/purpose"
+      ]
+    },
+    {
+      "category": "presentation",
+      "module_path": "skills/promptitect/references/modules/presentation.md",
+      "required_sections": [
+        "Audience/decision",
+        "Narrative"
+      ]
+    },
+    {
+      "category": "agent-tool",
+      "module_path": "skills/build-agent/SKILL.md",
+      "required_sections": [
+        "Mission",
+        "Environment/inputs",
+        "Capabilities",
+        "Output"
+      ]
+    },
+    {
+      "category": "prompt-pack-context",
+      "module_path": "skills/promptitect/references/modules/prompt-pack-context.md",
+      "required_sections": [
+        "Surface/model"
+      ]
+    }
+  ],
+  "category_notes": [
+    "Primary category is canonical; a real hybrid preserves primary order and imports only necessary modules.",
+    "The agent/tool category is delegated to build-agent in the plugin; Promptitect GPT includes it in a grouped category document.",
+    "Promptitect's command-gated prompt rating is distinct from independent general Evaluator v2."
+  ],
+  "not_in_scope": [
+    "Older GPT-5.5 prompt packs",
+    "EV-00 through EV-09 legacy Evaluator family",
+    "Automatic approval or merge decisions",
+    "Full raw GPT prompts in public repository"
+  ]
+}
