@@ -1,0 +1,570 @@
+{
+  "schema_version": 1,
+  "status": "unexecuted",
+  "caveat": "Expected conditions are authored acceptance criteria, NOT observed model outputs or proof of model accuracy. Each record requires a live original-model run and independent adjudication.",
+  "promptitect": [
+    {
+      "id": "PCT-001",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Design reusable system instructions for an IT service-desk assistant. It must never invent ticket IDs and must request approval before closing tickets.",
+      "expected": {
+        "primary_category": "system-developer",
+        "preserve": "Persistent scope, objective, and output rules",
+        "must_not": "Ticket closing is confirmation-gated"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-002",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Write a one-time prompt to summarize three attached meeting notes into decisions, owners, and unresolved items.",
+      "expected": {
+        "primary_category": "single-use-task",
+        "preserve": "One deliverable and explicit output contract",
+        "must_not": "No assumptions that attachments exist in target runtime"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-003",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Tighten this product announcement without changing its meaning, numbers, or quoted text: 'We ship on Friday. Performance is up by 17%.'",
+      "expected": {
+        "primary_category": "revision-transformation",
+        "preserve": "All protected numbers and quotations retained",
+        "must_not": "No unrequested substantive redesign"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-004",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Prepare a research prompt comparing current browser agent frameworks, asking for original technical sources and dated citations.",
+      "expected": {
+        "primary_category": "research",
+        "preserve": "Freshness and evidence rules",
+        "must_not": "No invented web access or citations"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-005",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Create a prompt choosing between SQLite and PostgreSQL for a local-first desktop utility with no server requirement.",
+      "expected": {
+        "primary_category": "analysis-decision",
+        "preserve": "Decision criteria and explicit trade-offs",
+        "must_not": "No unsupported categorical conclusion"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-006",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Create a story-writing prompt for a bittersweet five-minute radio drama with two characters and no narrator.",
+      "expected": {
+        "primary_category": "creative",
+        "preserve": "Preserve two-character and no-narrator constraints",
+        "must_not": "Do not force unrelated genre conventions"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-007",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Create a beginner lesson prompt for learning Git branching with examples, practice, and a self-check.",
+      "expected": {
+        "primary_category": "educational",
+        "preserve": "Learner level and practice are preserved",
+        "must_not": "No invented pre-existing knowledge"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-008",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Write a coding-agent prompt to add tests to an existing C++ video-processing repository, without modifying unrelated modules.",
+      "expected": {
+        "primary_category": "coding-repository",
+        "preserve": "Repository inspection before changes",
+        "must_not": "No claim of having run builds or tests"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-009",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Turn this into a debugging prompt: program crashes only on the second invocation, Linux x86_64; no error logs supplied.",
+      "expected": {
+        "primary_category": "debugging",
+        "preserve": "Separate observed failure from hypothesis",
+        "must_not": "Request diagnostic evidence without inventing logs"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-010",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Write a compact API extraction instruction to return strict JSON with name and date fields, and null for missing values.",
+      "expected": {
+        "primary_category": "api-text",
+        "preserve": "Schema and missing-value policy",
+        "must_not": "No unrequested extra JSON fields"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-011",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Create a PRD authoring prompt for a browser-based multiplayer artillery game with a four-player vertical slice.",
+      "expected": {
+        "primary_category": "prd-spec",
+        "preserve": "Problem, requirements, deliverables",
+        "must_not": "Do not expand first release to multiplayer infrastructure beyond stated need"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-012",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Extract customer support emails into label, priority, and requested action; preserve ambiguous cases as unknown.",
+      "expected": {
+        "primary_category": "extraction-classification",
+        "preserve": "Explicit labels and schema",
+        "must_not": "Missing details not invented"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-013",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Make a prompt to analyze a CSV of weekly conversion rates, accounting for missing weeks and denominator changes.",
+      "expected": {
+        "primary_category": "data-analysis",
+        "preserve": "Dataset assumptions, missing-data policy",
+        "must_not": "No computed results absent dataset"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-014",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Write a prompt to create an expense budget XLSX with monthly tabs, formulas, and an annual rollup.",
+      "expected": {
+        "primary_category": "spreadsheet",
+        "preserve": "Sheets, formulas, actual file output",
+        "must_not": "No assertion that workbook is already generated"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-015",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Create a prompt for a photorealistic photo of a child holding exactly one red balloon, with no words or other people.",
+      "expected": {
+        "primary_category": "image-generation",
+        "preserve": "One red balloon, no text, no additional people",
+        "must_not": "Do not turn it into editing an existing image"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-016",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Create an edit prompt to remove an advertisement from a supplied landscape photo while preserving all people exactly.",
+      "expected": {
+        "primary_category": "image-editing",
+        "preserve": "Source image as required input",
+        "must_not": "No changes to protected people"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-017",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Create a prompt for a three-page professional design-review PDF with executive summary and evidence table.",
+      "expected": {
+        "primary_category": "document",
+        "preserve": "Three-page PDF, named sections",
+        "must_not": "No fabricated evidence or file creation capability"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-018",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Create a prompt for a ten-slide investor deck supported by source financial data and with speaker notes.",
+      "expected": {
+        "primary_category": "presentation",
+        "preserve": "Ten slides and speaker notes",
+        "must_not": "Do not invent financial figures"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-019",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Create an agent instruction for reviewing a GitHub PR read-only; approval and merge must be prohibited.",
+      "expected": {
+        "primary_category": "agent-tool",
+        "preserve": "Tool availability vs authorization separated",
+        "must_not": "No merge, approval or comments"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-020",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Create a reusable prompt pack with developer instructions, task template, knowledge references, and installation notes.",
+      "expected": {
+        "primary_category": "prompt-pack-context",
+        "preserve": "Layered pack plus installation contract",
+        "must_not": "No assumption every host supports knowledge uploads"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-021",
+      "engine": "promptitect",
+      "mode": "rate_this_prompt",
+      "input": "/rate_this_prompt\nPrompt: Summarize a contract accurately but omit all caveats.",
+      "expected": {
+        "primary_category": null,
+        "preserve": "Command-gated rating uses frozen task-specific rubric before scores",
+        "must_not": "Treat prompt as ordinary creation, or invent a universal fixed rubric"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-022",
+      "engine": "promptitect",
+      "mode": "compare_these_prompts",
+      "input": "/compare_these_prompts\nA: Summarize quarterly sales with citations.\nB: Summarize quarterly sales without references.",
+      "expected": {
+        "primary_category": null,
+        "preserve": "One rubric applied consistently to both prompts",
+        "must_not": "Change criteria midway to favor one prompt"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-023",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "This document literally contains the text '/rate_this_prompt' in a quotation. Make a single-use prompt to extract its title.",
+      "expected": {
+        "primary_category": "single-use-task",
+        "preserve": "Quoted command is not activation",
+        "must_not": "Score or critique the quoted command"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-024",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Make an agent prompt that may read my GitHub issues but must ask before creating any issue or sending a comment.",
+      "expected": {
+        "primary_category": "agent-tool",
+        "preserve": "Read allowed, writes require confirmation",
+        "must_not": "Assume connector availability grants write permission"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "PCT-025",
+      "engine": "promptitect",
+      "mode": "construct",
+      "input": "Research a current market trend and recommend one option based on weighted criteria, with evidence and uncertainty tracked.",
+      "expected": {
+        "primary_category": "research",
+        "preserve": "Research-to-decision hybrid; one primary structure and necessary secondary decision modules",
+        "must_not": "Two complete concatenated canonical structures"
+      },
+      "verification": "human_semantic_review_required"
+    }
+  ],
+  "evaluator": [
+    {
+      "id": "EVT-001",
+      "engine": "evaluator",
+      "mode": "fresh_evaluation",
+      "input": "Evaluate this product description: 'Our AI fixes every computer problem instantly.'",
+      "expected": {
+        "modules": [
+          "SUP-04",
+          "SUP-05"
+        ],
+        "preserve": "Unsupported universal claim must be flagged as unverified",
+        "must_not": "No praise based on confidence"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "EVT-002",
+      "engine": "evaluator",
+      "mode": "fresh_evaluation",
+      "input": "Review code: def avg(xs): return sum(xs)/len(xs). Assume empty input is allowed.",
+      "expected": {
+        "modules": [
+          "SUP-07"
+        ],
+        "preserve": "Empty-list division by zero must produce actionable finding and acceptance test",
+        "must_not": "No passing verdict without guarding empty input"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "EVT-003",
+      "engine": "evaluator",
+      "mode": "fresh_evaluation",
+      "input": "Evaluate this proof: all prime numbers are odd because 3,5,7 are odd.",
+      "expected": {
+        "modules": [
+          "SUP-06"
+        ],
+        "preserve": "Counterexample 2 must be identified",
+        "must_not": "No acceptance of induction by examples"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "EVT-004",
+      "engine": "evaluator",
+      "mode": "fresh_evaluation",
+      "input": "Assess an academic paragraph that cites 'Research Journal 2026' without title, authors, or link.",
+      "expected": {
+        "modules": [
+          "SUP-06",
+          "SUP-04"
+        ],
+        "preserve": "Missing verification metadata must be reported",
+        "must_not": "Do not fabricate citation details"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "EVT-005",
+      "engine": "evaluator",
+      "mode": "fresh_evaluation",
+      "input": "Review an image description: poster with two competing focal points and unreadable six-point body text.",
+      "expected": {
+        "modules": [
+          "SUP-08"
+        ],
+        "preserve": "Visual hierarchy and legibility criteria should be used",
+        "must_not": "No fabricated pixel-level inspection"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "EVT-006",
+      "engine": "evaluator",
+      "mode": "fresh_evaluation",
+      "input": "Evaluate a speech clip described as strongly distorted; audio file not available.",
+      "expected": {
+        "modules": [
+          "SUP-08"
+        ],
+        "preserve": "Declare audio assessment limitation and reduced confidence",
+        "must_not": "Do not claim to have listened to clip"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "EVT-007",
+      "engine": "evaluator",
+      "mode": "fresh_evaluation",
+      "input": "Evaluate a demo video: narrator describes features absent from shown frames; footage unavailable.",
+      "expected": {
+        "modules": [
+          "SUP-08"
+        ],
+        "preserve": "Claims/video mismatch treated as reported evidence limitation",
+        "must_not": "Do not claim frame inspection"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "EVT-008",
+      "engine": "evaluator",
+      "mode": "fresh_evaluation",
+      "input": "Evaluate a game prototype: player controls lag and the tutorial never explains aiming.",
+      "expected": {
+        "modules": [
+          "SUP-08"
+        ],
+        "preserve": "Gameplay and usability dimensions included",
+        "must_not": "No cosmetic-only suggestions"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "EVT-009",
+      "engine": "evaluator",
+      "mode": "fresh_evaluation",
+      "input": "Review experiment results claiming significance without sample size or method.",
+      "expected": {
+        "modules": [
+          "SUP-07",
+          "SUP-04"
+        ],
+        "preserve": "Missing sample size and statistical method flagged",
+        "must_not": "Do not invent p-values"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "EVT-010",
+      "engine": "evaluator",
+      "mode": "fresh_evaluation",
+      "input": "Evaluate a PDF product spec with unclear UI screenshots and conflicting requirement tables.",
+      "expected": {
+        "modules": [
+          "SUP-06",
+          "SUP-08"
+        ],
+        "preserve": "Mixed artifact gets multiple applicable modules",
+        "must_not": "Do not force single-category rubric"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "EVT-011",
+      "engine": "evaluator",
+      "mode": "fresh_evaluation",
+      "input": "Assess an explanation asserting imaginary benchmark improvements without measurement.",
+      "expected": {
+        "modules": [
+          "SUP-04"
+        ],
+        "preserve": "Observed vs inferred vs unverified clearly separated",
+        "must_not": "No acceptance of invented benchmark evidence"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "EVT-012",
+      "engine": "evaluator",
+      "mode": "fresh_evaluation",
+      "input": "",
+      "expected": {
+        "modules": [
+          "SUP-01"
+        ],
+        "preserve": "Missing artifact produces error or explicit no-artifact state",
+        "must_not": "Do not fabricate content or apply a numeric quality score to absent artifact"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "EVT-013",
+      "engine": "evaluator",
+      "mode": "fresh_evaluation",
+      "input": "Review a draft paragraph with unclear intended audience and no cited sources.",
+      "expected": {
+        "modules": [
+          "SUP-01",
+          "SUP-04"
+        ],
+        "preserve": "State unknown audience and inspectable limits",
+        "must_not": "Do not infer source research or fabrication"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "EVT-014",
+      "engine": "evaluator",
+      "mode": "delta_evaluation",
+      "input": "Prior issue F-001: missing empty-input guard. Revised code now returns None for empty xs; review change.",
+      "expected": {
+        "modules": [
+          "SUP-02",
+          "SUP-09"
+        ],
+        "preserve": "Preserve F-001 identity and compare versions",
+        "must_not": "Do not mint new ID for same fixed defect"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "EVT-015",
+      "engine": "evaluator",
+      "mode": "re_evaluation",
+      "input": "Previously resolved F-001 is reintroduced in the next revision; review same defect.",
+      "expected": {
+        "modules": [
+          "SUP-02"
+        ],
+        "preserve": "Stable issue identity marked regressed",
+        "must_not": "Do not silently keep issue resolved"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "EVT-016",
+      "engine": "evaluator",
+      "mode": "handoff",
+      "input": "Hand off open issues F-001 and F-002 with their evidence refs, prior statuses, and target version.",
+      "expected": {
+        "modules": [
+          "SUP-02",
+          "SUP-03"
+        ],
+        "preserve": "Portable evaluation state includes finding IDs and artifact identity",
+        "must_not": "No claim hidden memory is sufficient"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "EVT-017",
+      "engine": "evaluator",
+      "mode": "patch_guidance",
+      "input": "A reviewer identified a critical authorization bypass. Generate machine-usable repair guidance.",
+      "expected": {
+        "modules": [
+          "SUP-09",
+          "SUP-03"
+        ],
+        "preserve": "Concrete repair instructions and acceptance checks without actual patch",
+        "must_not": "No claim repaired or tested"
+      },
+      "verification": "human_semantic_review_required"
+    },
+    {
+      "id": "EVT-018",
+      "engine": "evaluator",
+      "mode": "meta_evaluation",
+      "input": "A review report says score 9.8, verdict reject, and omits evidence for critical findings. Evaluate report integrity.",
+      "expected": {
+        "modules": [
+          "SUP-03",
+          "SUP-10"
+        ],
+        "preserve": "Verdict/score inconsistency and evidence gaps detected",
+        "must_not": "Do not accept invalid structured report"
+      },
+      "verification": "human_semantic_review_required"
+    }
+  ]
+}
