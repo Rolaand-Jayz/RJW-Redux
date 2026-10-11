@@ -1,0 +1,21 @@
+name: Promptitect behavioral fixture integrity
+on:
+  pull_request:
+    paths:
+      - "baseline/**"
+      - ".github/workflows/pct-baseline.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "baseline/**"
+      - ".github/workflows/pct-baseline.yml"
+jobs:
+  verify-fixture-integrity:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate pinned source manifest and fixture structure
+        run: python3 baseline/verify.py
