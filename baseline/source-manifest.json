@@ -77,6 +77,17 @@
         "Function",
         "Objective",
         "Output"
+      ],
+      "canonical_order": [
+        "Function",
+        "Objective",
+        "Priorities",
+        "Workflow",
+        "Context/sources",
+        "Capabilities/authorization",
+        "Output",
+        "Ambiguity/exceptions",
+        "Completion"
       ]
     },
     {
@@ -85,14 +96,34 @@
       "required_sections": [
         "Objective",
         "Output"
+      ],
+      "canonical_order": [
+        "Objective",
+        "Context",
+        "Requirements",
+        "Constraints",
+        "Output",
+        "Complete when"
       ]
     },
     {
       "category": "revision-transformation",
       "module_path": "skills/promptitect/references/modules/revision-transformation.md",
       "required_sections": [
-        "Source",
-        "Change"
+        "Scope",
+        "Target",
+        "Output mode",
+        "Source"
+      ],
+      "canonical_order": [
+        "Scope",
+        "Preserve",
+        "May change",
+        "Must not change",
+        "Target",
+        "Length/strictness",
+        "Output mode",
+        "Source"
       ]
     },
     {
@@ -102,6 +133,18 @@
         "Objective/decision",
         "Questions",
         "Deliverable"
+      ],
+      "canonical_order": [
+        "Objective/decision",
+        "Scope/exclusions",
+        "Timeframe",
+        "Questions",
+        "Sources",
+        "Freshness",
+        "Evidence/conflicts",
+        "Citations",
+        "Deliverable",
+        "Stop"
       ]
     },
     {
@@ -111,6 +154,15 @@
         "Decision",
         "Criteria",
         "Recommendation"
+      ],
+      "canonical_order": [
+        "Decision",
+        "Alternatives",
+        "Criteria",
+        "Evidence",
+        "Assumptions/uncertainty",
+        "Trade-offs",
+        "Recommendation"
       ]
     },
     {
@@ -118,6 +170,16 @@
       "module_path": "skills/promptitect/references/modules/creative.md",
       "required_sections": [
         "Deliverable"
+      ],
+      "canonical_order": [
+        "Deliverable",
+        "Audience",
+        "Form/genre",
+        "POV/voice",
+        "Length",
+        "Continuity",
+        "Invention freedom",
+        "Prohibitions"
       ]
     },
     {
@@ -126,6 +188,16 @@
       "required_sections": [
         "Learner",
         "Objective"
+      ],
+      "canonical_order": [
+        "Learner",
+        "Objective",
+        "Prerequisites",
+        "Method",
+        "Practice",
+        "Assessment",
+        "Accessibility",
+        "Answer key"
       ]
     },
     {
@@ -135,6 +207,19 @@
         "Task",
         "Desired",
         "Output"
+      ],
+      "canonical_order": [
+        "Task",
+        "Scope",
+        "Observed",
+        "Desired",
+        "Inspection",
+        "Constraints",
+        "Dependencies/actions",
+        "Validation",
+        "Evidence",
+        "Output",
+        "Complete when"
       ]
     },
     {
@@ -144,13 +229,33 @@
         "Failure",
         "Expected",
         "Deliverable"
+      ],
+      "canonical_order": [
+        "Failure",
+        "Expected",
+        "Environment",
+        "Code/config",
+        "Changes",
+        "Attempts",
+        "Diagnostics",
+        "Verification",
+        "Deliverable"
       ]
     },
     {
       "category": "api-text",
       "module_path": "skills/promptitect/references/modules/api-text.md",
       "required_sections": [
-        "Purpose"
+        "Behavior"
+      ],
+      "canonical_order": [
+        "Behavior",
+        "Variables",
+        "Delimiters",
+        "Schema",
+        "Missing/errors",
+        "Length",
+        "Determinism/portability"
       ]
     },
     {
@@ -160,6 +265,19 @@
         "Problem",
         "Requirements",
         "Deliverables"
+      ],
+      "canonical_order": [
+        "Problem",
+        "Users",
+        "Goals/non-goals",
+        "Constraints",
+        "Requirements",
+        "Workflows/dependencies",
+        "Acceptance",
+        "Risks/questions",
+        "Rollout",
+        "Source-of-truth",
+        "Deliverables"
       ]
     },
     {
@@ -167,7 +285,18 @@
       "module_path": "skills/promptitect/references/modules/extraction-classification.md",
       "required_sections": [
         "Input",
+        "Labels/transformations",
         "Schema"
+      ],
+      "canonical_order": [
+        "Input",
+        "Labels/transformations",
+        "Schema",
+        "Edge cases",
+        "Missing data",
+        "Ordering",
+        "Confidence",
+        "No-invention"
       ]
     },
     {
@@ -177,13 +306,37 @@
         "Question",
         "Dataset/schema",
         "Deliverable"
+      ],
+      "canonical_order": [
+        "Question",
+        "Dataset/schema",
+        "Transformations",
+        "Missing/outliers",
+        "Calculations/assumptions",
+        "Tables/charts",
+        "Reproducibility",
+        "Evidence",
+        "Deliverable"
       ]
     },
     {
       "category": "spreadsheet",
       "module_path": "skills/promptitect/references/modules/spreadsheet.md",
       "required_sections": [
-        "Purpose"
+        "Purpose",
+        "Sheets/columns",
+        "File output"
+      ],
+      "canonical_order": [
+        "Purpose",
+        "Source data",
+        "Sheets/columns",
+        "Formulas/assumptions",
+        "Validation/errors",
+        "Formatting/charts",
+        "Protected inputs",
+        "File output",
+        "Complete when"
       ]
     },
     {
@@ -192,6 +345,18 @@
       "required_sections": [
         "Purpose",
         "Subject/action"
+      ],
+      "canonical_order": [
+        "Purpose",
+        "Subject/action",
+        "Setting",
+        "Composition",
+        "Style",
+        "Lighting",
+        "Color/materials",
+        "Text",
+        "Aspect ratio",
+        "Exclusions"
       ]
     },
     {
@@ -200,13 +365,35 @@
       "required_sections": [
         "Source",
         "Change"
+      ],
+      "canonical_order": [
+        "Source",
+        "Change",
+        "Preserve exactly",
+        "Composition/style/lighting",
+        "Add/remove",
+        "Text",
+        "Dimensions/background",
+        "Forbidden drift"
       ]
     },
     {
       "category": "document",
       "module_path": "skills/promptitect/references/modules/document.md",
       "required_sections": [
-        "Type/purpose"
+        "Type/purpose",
+        "Sections"
+      ],
+      "canonical_order": [
+        "Type/purpose",
+        "Audience",
+        "Sources",
+        "Sections",
+        "Length/tone",
+        "Citations/tables/figures",
+        "Layout/file",
+        "Exclusions",
+        "Complete when"
       ]
     },
     {
@@ -215,6 +402,17 @@
       "required_sections": [
         "Audience/decision",
         "Narrative"
+      ],
+      "canonical_order": [
+        "Audience/decision",
+        "Narrative",
+        "Slide count",
+        "Sections",
+        "Sources",
+        "Visual system/density",
+        "Charts/images",
+        "Notes",
+        "File output"
       ]
     },
     {
@@ -225,13 +423,41 @@
         "Environment/inputs",
         "Capabilities",
         "Output"
+      ],
+      "canonical_order": [
+        "Mission",
+        "Environment/inputs",
+        "Capabilities",
+        "Workflow",
+        "Autonomous",
+        "Confirmation-gated",
+        "Read-only/prohibited",
+        "Evidence",
+        "Failure/retry",
+        "Stop",
+        "Output"
       ]
     },
     {
       "category": "prompt-pack-context",
       "module_path": "skills/promptitect/references/modules/prompt-pack-context.md",
       "required_sections": [
-        "Surface/model"
+        "Surface/model",
+        "System/developer",
+        "Task prompt",
+        "Installation"
+      ],
+      "canonical_order": [
+        "Surface/model",
+        "System/developer",
+        "Task prompt",
+        "Files/sources",
+        "Retrieval",
+        "Tool/authorization",
+        "Runtime variables",
+        "Optional example",
+        "Exclusions",
+        "Installation"
       ]
     }
   ],
